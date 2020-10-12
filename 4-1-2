@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class U4_L1_Activity_Two{
+  public static void main(String[] args){
+    
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter the Scores:");
+
+    int x = 0;
+    float z = 0;
+    float count = 0;
+    while (x != -1) 
+    {
+      x= scan.nextInt();
+      count++ ;
+      if (x==-1)
+      break;
+      z += x ;
+    } 
+    count = count-1;
+    
+    double y = ((z/count));
+    System.out.println(z);
+    System.out.println("\nThe average is: " +  y);
+        
+  }
+}
